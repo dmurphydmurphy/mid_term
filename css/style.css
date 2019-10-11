@@ -1,0 +1,117 @@
+/*############################################################################
+Name: Dillard Murphy
+Date: 10/10/2019
+Version: 1.0
+Purpose: This style sheet is using bootstrap to style index.html.
+#############################################################################*/
+
+.bd-placeholder-img{
+  font-size: 1.125rem;
+  text-anchor: middle;
+}
+
+@media (min-width: 768px){
+  .bd.bd-placeholder-img-lg{
+    font-size: 3.5rem;
+  }
+}
+
+/* Move down content because we have a fixed navbar that is 3.5rem tall */
+body {
+  padding-top: 3.5rem;
+}
+
+/* ------------------------------------------------------------------------- */
+/* Start of the sytle for the portfolio image */
+/* ------------------------------------------------------------------------- */
+img {
+  border-radius: 50%;
+}
+
+.flip-box {
+  background-color: transparent;
+  width: 200px;
+  height: 200px;
+  border: 1px solid #f1f1f1;
+  perspective: 1000px;
+}
+
+.flip-box-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.flip-box:hover .flip-box-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-box-front, .flip-box-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  border-radius: 50%;
+}
+
+.flip-box-front {
+  background-color: #bbb;
+  color: black;
+}
+
+.flip-box-back {
+  background-color: black;
+  color: white;
+  transform: rotateY(180deg);
+}
+/* ------------------------------------------------------------------------- */
+/* End of the sytle for the portfolio image */
+/* ------------------------------------------------------------------------- */
+
+.images{
+/*  margin: 0px auto 0px auto; */
+  height: 225px;
+  width: 225px;
+}
+
+a.box-links {
+    align-items: center;
+    background: none repeat scroll 0 0 #EBEBEB;
+    border-right: 2px solid #FFFFFF;
+    display: flex;
+    justify-content: center;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+
+.flex-container{
+  display:flex;
+  margin:100px;
+  padding:5px;
+  justify-content: center;
+  align-content: center;
+}
+
+a.box-links:link{
+
+   text-decoration: none;
+}
+a.box-links:visited
+{
+   color: #fb3f00;
+   text-decoration: none;
+}
+a.box-links:hover
+{
+   color: #fb3f00;
+   text-decoration: none;
+}
+a.box-links:active
+{
+   color: #fb3f00;
+   text-decoration: none;
+}

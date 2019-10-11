@@ -1,0 +1,22 @@
+/*############################################################################
+Name: Dillard Murphy
+Date: 10/10/2019
+Version: 1.0
+Purpose: This style sheet is using css to style bootstrap.html.
+#############################################################################*/
+
+.bd-placeholder-img{
+  font-size: 1.125rem;
+  text-anchor: middle;
+}
+
+@media (min-width: 768px){
+  .bd.bd-placeholder-img-lg{
+    font-size: 3.5rem;
+  }
+}
+
+/* Move down content because we have a fixed navbar that is 3.5rem tall */
+body {
+  padding-top: 3.5rem;
+}
